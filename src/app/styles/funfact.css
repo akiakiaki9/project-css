@@ -1,0 +1,120 @@
+.funfact {
+    width: 1200px;
+    padding: 50px;
+    position: absolute;
+    left: 11%;
+    bottom: -150px;
+    background-image: url(/images/funfuct-bg.svg);
+    background-blend-mode: multiply;
+    background-color: #111111;
+    border-radius: 20px;
+}
+
+.funfact-blok {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.funfact-blok__section {}
+
+.funfact-blok__section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.funfact-blok__section-1 h1 {
+    font-size: 300%;
+    font-weight: 600;
+    color: #fff;
+}
+
+.funfact-blok__section-1 p {
+    max-width: 500px;
+}
+
+.funfact-blok__section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.funfact-blok__section__container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.funfact-blok__section__container-part {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+}
+
+.funfact-blok__section__container-part h1 {
+    font-size: 300%;
+    font-weight: 600;
+    color: #fff;
+}
+
+.funfact-blok__section__container-part__finally {
+    display: flex;
+    flex-direction: column;
+}
+
+.funfact-blok__section__container-part__finally b {
+    font-weight: 500;
+    font-size: 110%;
+    color: var(--orange-color);
+}
+
+.funfact-blok__section__container-part__finally p {
+    font-weight: 300;
+}
+
+@media (max-width: 1480px) {
+    .funfact {
+        width: 100%;
+        padding: 50px;
+        left: 0;
+        position: absolute;
+        bottom: -150px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .funfact {
+        padding: 50px;
+        position: relative;
+        top: 0;
+    }
+
+    .funfact-blok {
+        flex-direction: column;
+    }
+
+    .funfact-blok__section-1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .funfact-blok__section-2 {
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .funfact-blok__section__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .funfact {
+        padding: 20px 10px;
+    }
+}

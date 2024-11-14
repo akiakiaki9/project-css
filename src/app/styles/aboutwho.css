@@ -1,0 +1,84 @@
+.aboutwho {
+    padding: 50px 150px 70px 150px;
+}
+
+.aboutwho-blok {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.aboutwho-blok__section-1 img {
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 50px 50px 0px 0px rgba(255,74,23,1);
+}
+
+.aboutwho-blok__section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    color: #fff;
+}
+
+.aboutwho-blok__section-2 h1 {
+    font-size: 270%;
+    color: #fff;
+    max-width: 500px;
+}
+
+.aboutwho-blok__section-p1 {
+    font-weight: bold;
+    font-size: 105%;
+    color: var(--white-color);
+}
+
+.aboutwho-blok__section-p2 {
+    color: var(--white-color);
+    max-width: 600px;
+}
+
+.aboutwho-blok__section-2 h1 {
+
+}
+
+.aboutwho-blok__div {
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--orange-color);
+}
+
+@media (max-width: 1250px) {
+    .aboutwho {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 930px) {
+    .aboutwho-blok {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .aboutwho-blok__section-2 {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 478px) {
+
+    .aboutwho-blok__section-1 img {
+        width: 300px;
+        height: 400px;
+        box-shadow: 20px 20px 0px 0px rgba(255,74,23,1);
+    }
+
+    .aboutwho-blok__section-2 h1 {
+        font-size: 200%;
+    }
+}

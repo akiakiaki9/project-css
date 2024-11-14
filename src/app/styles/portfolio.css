@@ -1,0 +1,131 @@
+/* Основной стиль для контейнера портфолио */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.portfolio-blok__section-1-part-1 p {
+   font-weight: bold;
+}
+
+.portfolio-blok__section-1-part-1 h1 {
+    font-size: 270%;
+    color: #Fff;
+}
+
+.portfolio-blok__section-1-part-2 {
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Стиль для кнопок категорий */
+.category-button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: none;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-button.active {
+    color: var(--orange-color);
+}
+
+.category-underline {
+    position: relative;
+    height: 2px;
+    background-color: var(--white-color);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.category-dot {
+    position: absolute;
+    bottom: -5px; /* Отступ вниз от линии */
+    width: 10px;
+    height: 10px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    transition: left 0.3s ease;
+}
+
+/* Сетка изображений */
+.portfolio-blok__section-2 {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших экранах */
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Стиль для каждого элемента портфолио */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Классы для различных размеров изображений */
+.portfolio-item.small { grid-row: span 1; }
+.portfolio-item.medium { grid-row: span 2; }
+.portfolio-item.large { grid-row: span 3; }
+
+@media (max-width: 1449px) {
+    .portfolio {
+        padding: 20px;
+    }
+}
+
+/* Адаптивное поведение для экранов с шириной до 1024px */
+@media (max-width: 1024px) {
+    .portfolio-blok__section-2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на экранах до 1024px */
+    }
+}
+
+/* Адаптивное поведение для экранов с шириной до 768px */
+@media (max-width: 768px) {
+    .portfolio-blok__section-2 {
+        grid-template-columns: 1fr; /* 1 колонка на мобильных устройствах */
+    }
+    .portfolio-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 590px) {
+    .portfolio-blok__section-1-part-1 {
+        text-align: center;
+    }
+    .category-button {
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 110%;
+    }
+    .portfolio-blok__section-1-part-2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .portfolio-blok__section-1-part-1 h1 {
+        font-size: 250%;
+    }
+}

@@ -1,0 +1,91 @@
+.team {
+  padding: 50px 10px;
+}
+
+.team-member {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.team-blok__section-1 {
+  padding: 0 120px;
+}
+
+.team-blok__section h1 {
+  font-size: 270%;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.team-member-info {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  z-index: 1;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 300px;
+  transition: .5s;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.social-icons {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  /* Иконки остаются слева */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-member:hover .social-icons {
+  opacity: 1;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.team-member:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1490px) {
+  .team-blok__section-1 {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1117px) {
+  .team-blok__section-1 {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .team-blok__section-1 h1 {
+      font-size: 250%;
+  }
+}

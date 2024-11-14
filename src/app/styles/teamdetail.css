@@ -1,0 +1,120 @@
+.teamdet {
+    padding: 20px 100px;
+}
+
+.teamdet-blok {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.teamdet-blok__section-1 img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    transition: .3s;
+    border-radius: 15px;
+}
+
+.teamdet-blok__section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.teamdet-blok__section-part-1 h1 {
+    color: #fff;
+    font-size: 300%;
+}
+
+.teamdet-blok__section-part-1 b {
+    color: var(--white-color);
+    font-size: 110%;
+}
+
+.teamdet-blok__section-part-2 p {
+    font-size: 105%;
+    color: var(--white-color);
+    max-width: 700px;
+}
+
+.teamdet-blok__section-part-3 {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.teamdet__icon {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.teamdet__icon:hover {
+    transform: translateY(-10px);
+    color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+
+.teamdet__div {
+    width: 70px;
+    height: 3px;
+    background-color: var(--orange-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1449px) {
+    .teamdet {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .teamdet-blok__section-1 img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+        transition: .3s;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 988px) {
+    .teamdet-blok {
+        flex-direction: column;
+    }
+
+    .teamdet-blok__section-2 {
+        align-items: center;
+    }
+
+    .teamdet-blok__section-part-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 564px) {
+    .teamdet-blok__section-1 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .teamdet-blok__section-part-1 h1 {
+        font-size: 250%;
+    }
+
+    .teamdet {
+        margin-bottom: 30px;
+    }
+}

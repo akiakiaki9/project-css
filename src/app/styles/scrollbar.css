@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Цвет фона полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange-color);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

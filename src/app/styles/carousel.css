@@ -1,0 +1,105 @@
+.slider-container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: 70px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-image {
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 1s ease;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;    
+    font-weight: 500;
+}
+
+.carousel-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.carousel-text-div div {
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* Отображение текста только на активном слайде */
+.swiper-slide-active .carousel-text {
+    opacity: 1;
+    transition: opacity 1s ease;
+    /* Добавляем плавное отображение */
+}
+
+.swiper-slide-active .carousel-image {
+    transform: scale(1.15);
+    border-radius: 10px;
+    filter: brightness(.5);
+}
+
+.slider-controler {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.control-arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.control-arrow-1:hover,
+.control-arrow-2:hover {
+    color: var(--orange-color);
+}
+
+.control-arrow:hover {
+    border: 1px solid currentColor;
+}
+
+@media (max-width: 720px) {
+    .carousel-image {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
