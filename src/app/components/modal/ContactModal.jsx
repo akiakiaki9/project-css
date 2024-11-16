@@ -12,6 +12,7 @@ export default function ContactModal({ isOpen, onClose }) {
 
   const [visible, setVisible] = useState(false);
 
+  
   // Плавное открытие модального окна
   useEffect(() => {
     if (isOpen) {

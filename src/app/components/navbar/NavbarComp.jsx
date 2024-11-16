@@ -67,8 +67,9 @@ export default function Navbar() {
                 <div className="navbar-fullscreen-menu active">
                     <ul className="menu-items">
                         <li><Link onClick={() => handleLinkClick('/')} style={{ color: activePage === '/' ? 'var(--orange-color)' : '' }} href="/">Home</Link></li>
-                        <li><Link onClick={() => handleLinkClick('/about')} style={{ color: activePage === '/about' ? 'var(--orange-color)' : '' }} href="/about">About</Link></li>
-                        <li><Link onClick={() => handleLinkClick('/blog')} style={{ color: activePage === '/blog' ? 'var(--orange-color)' : '' }} href="/blog">Blog</Link></li>
+                        <li><Link onClick={() => handleLinkClick('/about-us')} style={{ color: activePage === '/about-us' ? 'var(--orange-color)' : '' }} href="/about-us">About</Link></li>
+                        <li><Link onClick={() => handleLinkClick('/services')} style={{ color: activePage === '/services' ? 'var(--orange-color)' : '' }} href="/services">Services</Link></li>
+                        <li><Link onClick={() => handleLinkClick('/portfolio')} style={{ color: activePage === '/portfolio' ? 'var(--orange-color)' : '' }} href="/portfolio">Portfolio</Link></li>
                         <li><Link onClick={() => handleLinkClick('/contacts')} style={{ color: activePage === '/contacts' ? 'var(--orange-color)' : '' }} href="/contacts">Contacts</Link></li>
                         <AiOutlineClose className='navbar__close' onClick={toggleMenu} />
                     </ul>
