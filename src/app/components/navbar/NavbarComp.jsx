@@ -4,7 +4,6 @@ import { RiMenu3Line } from 'react-icons/ri';
 import { AiOutlineClose } from 'react-icons/ai';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import Modal from '../modal/Modal';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,7 +57,7 @@ export default function Navbar() {
                         <li><Link onClick={() => handleLinkClick('/contacts')} style={{ color: activePage === '/contacts' ? 'var(--orange-color)' : '' }} href="/contacts">Contacts</Link></li>
                     </ul>
                 )}
-                <div><Modal isMobile={isMobile} /></div>
+                <div></div>
                 <div onClick={toggleMenu} className="menu-icon">
                     <RiMenu3Line />
                 </div>
@@ -77,4 +76,4 @@ export default function Navbar() {
             )}
         </nav>
     );
-}
+};

@@ -6,6 +6,7 @@ import Header from "./components/header/header";
 import Section from "./components/section/section";
 import Team from "./team/team";
 import ServicesComp from "./services/Services";
+import Modal from "./components/modal/Modal";
 
 export const metadata = {
   title: "Create Next App",
@@ -23,6 +24,7 @@ export default function Home() {
       <Brands />
       <Team />
       <AboutBg />
+      <Modal />
     </div>
   );
 };
